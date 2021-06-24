@@ -60,21 +60,49 @@ section {
     }
 }
 .irfan-img img {
-    opacity: 0.4;
+    opacity: 0;
     height: auto;
-    /*left: 50%;*/
-    width: 30vw;
+    /*width: 30vw;*/
+    animation: image 3s forwards;
+    animation-delay: 3s;
+    left: 60%;
+}
+@keyframes image {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.4;
+  }
 }
 .wd {
-    letter-spacing: 0.4em;
+    letter-spacing: 0.3em;
+    font-size: 13px;
 }
 @media (max-width: 770px) {
   .irfan-img {
     display: none;
   }
-/*  .glitch {
-    font-size: 2em;
-  }*/
+}
+.about {
+  margin-left: 10%;
+  margin-top: 10%;
+}
+.about-head {
+  font-family: 'Oswald', sans-serif;
+}
+.about-desc {
+  font-family: 'Oswald', 'Kaushan', sans-serif;
+}
+.more-btn {
+  font-family: 'Oswald', 'Kaushan', sans-serif;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
 }
 
 .glitch {
@@ -314,6 +342,7 @@ section {
 }
 
 .wel {
+  font-family: 'Oswald', sans-serif;
     font-size: 30px !important;
     animation: welcome 3s forwards;
     transform: rotate(-180deg);
