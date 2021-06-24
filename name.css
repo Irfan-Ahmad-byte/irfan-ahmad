@@ -62,11 +62,14 @@ section {
 .irfan-img img {
     opacity: 0;
     height: auto;
-    /*width: 30vw;*/
     animation: image 3s forwards;
     animation-delay: 3s;
     left: 60%;
 }
+/*@media (max-width: 770px) {
+  .irfan-img {
+    display: none;
+  }*/
 @keyframes image {
   0% {
     opacity: 0;
@@ -79,11 +82,7 @@ section {
     letter-spacing: 0.1em;
     font-size: 13px;
 }
-@media (max-width: 770px) {
-  .irfan-img {
-    display: none;
-  }
-}
+
 .about {
   margin-left: 10%;
   margin-top: 10%;
@@ -105,6 +104,161 @@ section {
   0 100px 80px rgba(0, 0, 0, 0.12)
 }
 
+@media (max-height: 640px) and (min-height: 534px) {
+  .about {
+    margin-left: 0px !important;
+    margin-top: 18%;
+  }
+  .more-btn {
+    margin-left: 0px !important;
+    margin-top: 9%;
+  }
+  .glitch {
+    margin-left: 0px !important;
+    font-size: 2em;
+  }
+  .about-head {
+    margin-left: 0px !important;
+    font-size: 1em;
+  }
+  .about-desc {
+    margin-left: 0px !important;
+    font-size: 16px;
+  }
+  .about .btn {
+    margin-left: 0px !important;
+    font-size: 1em;
+  }
+  .wd {
+    margin-left: 0px !important;
+    font-size: 13px;
+  }  
+  @media (max-width: 360px) {
+    .irfan-img img {
+      left: 50%;
+      top: 64%;
+      width: 40%;
+      height: auto;
+    }
+  }
+}
+@media (max-height: 1024px) and (min-height: 824px) {
+  .glitch {
+    font-size: 45px;
+  }
+  .about-head {
+    font-size: 35px;
+  }
+  .about-desc {
+    font-size: 25px;
+  }
+  .about .btn {
+    font-size: 30px !important;
+  }
+  .wd {
+    font-size: 20px;
+  }
+  .about {
+    margin-top: 25%;
+  }
+  .more-btn {
+    margin-top: 9%;
+  }
+  @media (max-width: 600px) {
+    .irfan-img img {
+      left: 50%;
+      top: 58%;
+      width: 40%;
+      height: auto;
+    }  
+  }
+}
+@media (max-height: 533px) {
+  .glitch {
+    font-size: 1.5em;
+  }
+  .about-head {
+    font-size: 1em;
+  }
+  .about-desc {
+    font-size: 15px;
+  }
+  .about .btn {
+    font-size: 0.7em;
+  }
+  .wd {
+    font-size: 10px;
+  }    
+  @media (max-width: 320px) {
+    .irfan-img img {
+      display: none;
+    }  
+  }
+}
+@media (max-height: 731px) and (min-height: 641px) {
+  .glitch {
+    font-size: 2em;
+  }
+  .about-head {
+    font-size: 1.5em;
+  }
+  .about-desc {
+    font-size: 20px;
+  }
+  .about .btn {
+    font-size: 0.7em;
+  }
+  .wd {
+    font-size: 15px;
+  }
+    @media (max-width: 411px) {
+    .irfan-img img {
+      left: 50%;
+      top: 64%;
+      width: 40%;
+      height: auto;
+    }  
+  }
+}
+@media (max-height: 823px) and (min-height: 732px) {
+  .glitch {
+    font-size: 2em;
+  }
+  .about-head {
+    font-size: 1.5em;
+  }
+  .about-desc {
+    font-size: 20px;
+  }
+  .about .btn {
+    font-size: 0.7em;
+  }
+  .wd {
+    font-size: 15px;
+  }   
+}
+@media (max-width: 320px) {
+  .glitch {
+    font-size: 1.5em;
+  }
+  .about-head {
+    font-size: 1.2em;
+  }
+  .about-desc {
+    font-size: 16px;
+  }
+  .about .btn {
+    font-size: 0.7em;
+  }
+  .wd {
+    font-size: 12px;
+  }   
+}
+@media (max-width: 280px) {
+  .wel {
+    font-size: 1em;
+  }  
+}
 .glitch {
   position: relative;
   color: white;
