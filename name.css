@@ -10,7 +10,6 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  /*font-family: 'Raleway', sans-serif;*/
 }
 :root {
   --color-red: #ec1840;
@@ -22,9 +21,9 @@
   --speed-normal: 0.5s;
   --speed-fast: 0.8s;
 }
-/*=================
-Basic style
-==================*/
+html {
+  font-size: 100%;
+}
 
 section {
     height: 100vh;
@@ -55,8 +54,16 @@ section {
     }
 }
 .welcome {
+  width: 100%;
+
     h3, h1 {
         font-family: 'Kaushan', sans-serif;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    h3 {
+      font-size: 2rem;
     }
 }
 .irfan-img img {
@@ -64,12 +71,10 @@ section {
     height: auto;
     animation: image 3s forwards;
     animation-delay: 1s;
-    left: 60%;
-}
-/*@media (max-width: 770px) {
-  .irfan-img {
+    left: 70%;
     display: none;
-  }*/
+}
+
 @keyframes image {
   0% {
     opacity: 0;
@@ -79,19 +84,22 @@ section {
   }
 }
 .wd {
-    letter-spacing: 0.1em;
-    font-size: 13px;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
 }
 
-.about {
-  margin-left: 10%;
-  margin-top: 10%;
+.welcome .col-md-6 {
+  margin-left: 1.5rem;
+  margin-top: 2rem;
+  width: 100%;
 }
 .about-head {
   font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
 }
 .about-desc {
   font-family: 'Oswald', 'Kaushan', sans-serif;
+  font-size: 1rem;
 }
 .more-btn {
   font-family: 'Oswald', 'Kaushan', sans-serif;
@@ -104,293 +112,60 @@ section {
   0 100px 80px rgba(0, 0, 0, 0.12)
 }
 
-@media only screen and (min-width: 768px) {
-  .welcome h3 {
-    font-size: 1em;
+/*mobiles*/
+
+@media (max-width: 768px) {
+  .irfan-img img {
+    width: 40%;
+    left: 13rem;
+    top: 30rem;
   }
-  .welcome h1 {
-    font-size: 2em;
+  @media (max-height: 1024px) {
+    .irfan-img img {
+      width: 40%;
+      left: 23rem;
+      top: 25rem;
+      }
+    .about-desc {
+      font-size: 1.4rem;
+    }
+    .wd {
+      font-size: 1.5rem;
+    }
+    .glitch {
+      font-size: 2.5rem;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .irfan-img img {
+    display: none;
   }
   .about {
-    margin-top: 10px;
+    margin-top: 1rem;
   }
-  .welcome .col-md-6 {
-    width: 100%;
+  .about-head {
+    font-size: 1.5rem;
   }
-  .more-btn {
-    margin-top: 0px;
+  .wd {
+    font-size: .7rem;
+  }
+}
+@media (min-width: 1024px) {
+  @media (min-height: 1366px) and (-webkit-min-device-pixel-ratio:2) {
+    .irfan-img img {
+      left: 25rem;
+      top: 30rem;
+    }
   }
 }
 
-/*@media (max-height: 640px) and (min-height: 534px) {
-  .about {
-    margin-left: 0px !important;
-    margin-top: 18%;
-  }
-  .more-btn {
-    margin-left: 0px !important;
-    margin-top: 9%;
-  }
-  .glitch {
-    margin-left: 0px !important;
-    font-size: 2em;
-  }
-  .about-head {
-    margin-left: 0px !important;
-    font-size: 1.5em;
-  }
-  .about-desc {
-    margin-left: 0px !important;
-    font-size: 16px;
-  }
-  .about .btn {
-    margin-left: 0px !important;
-    font-size: 1em;
-  }
-  .wd {
-    margin-left: 0px !important;
-    font-size: 13px;
-  }  
-  @media (max-width: 360px) {
-    .irfan-img img {
-      left: 50%;
-      top: 64%;
-      width: 40%;
-      height: auto;
-    }
-  }
-}*/
-/*@media (max-height: 1024px) and (min-height: 824px) {
-  .glitch {
-    font-size: 45px;
-  }
-  .about-head {
-    font-size: 35px;
-  }
-  .about-desc {
-    font-size: 25px;
-  }
-  .about .btn {
-    font-size: 30px !important;
-  }
-  .wd {
-    font-size: 20px;
-  }
-  .about {
-    margin-top: 25%;
-  }
-  .more-btn {
-    margin-top: 9%;
-  }
-  @media (max-width: 600px) {
-    .irfan-img img {
-      left: 50%;
-      top: 58%;
-      width: 40%;
-      height: auto;
-    }  
-  }
-}*/
-/*@media (max-height: 533px) {
-  .glitch {
-    font-size: 1.5em;
-  }
-  .about-head {
-    font-size: 1em;
-  }
-  .about-desc {
-    font-size: 15px;
-  }
-  .about .btn {
-    font-size: 0.7em;
-  }
-  .wd {
-    font-size: 10px;
-  }    
-  @media (max-width: 320px) {
-    .irfan-img img {
-      display: none;
-    }  
-  }
-}*/
-/*@media (max-height: 568px) {
-  @media (max-width: 320px) {
-    .irfan-img img {
-      display: none;
-    }  
-  }
-}
-@media (max-height: 667px) {
-  @media (max-width: 375px) {
-    .irfan-img img {
-      display: none;
-    }
-    .about {
-      margin-top: 45px;
-    }
-  }
-}
-@media (max-height: 736px) {
-  @media (max-width: 414px) {
-    .irfan-img img {
-      display: none;
-    }
-    .about {
-      margin-top: 55px;
-    }
-  }
-}
-@media (max-height: 1024px) {
-  @media (max-width: 768px) {
-    .welcome .col-md-6 {
-      width: 50vw;
-    }
-  }
-}*/
-/*@media (max-height: 1366px) {
-  @media (max-width: 1024px) {
-    .irfan-img img {
-      width: 38vw;
-    }
-    .welcome {
-      width: 70vw;
-    }
-    .welcome h3 {
-      font-size: 3em !important;
-    }
-    .glitch {
-      font-size: 3.5em;
-    }
-    .wd {
-      font-size: 1.5em;
-    }
-    .welcome .col-md-6 {
-      margin-top: 80px;
-      width: 50vw;
-    }
-    .about-head {
-      font-size: 3em;
-    }
-    .about-desc {
-      font-size: 2.2em;
-    }
-    .about a {
-      margin-top: 10px;
-      font-size: 2.2em !important;
-    }
-  }
-}*/
-/*@media (max-height: 653px) {
-  @media (max-width: 280px) {
-    .irfan-img img {
-      display: none;
-    }
-    .welcome {
-      width: 100vw;
-    }
-    .welcome h3 {
-      font-size: 1.7em !important;
-    }
-    .glitch {
-      font-size: 1.7em !important;
-    }
-    .wd {
-      font-size: 1.5em;
-    }
-    .welcome .col-md-6 {
-      margin-top: 10px;
-      width: 70vw;
-    }
-    .about-head {
-      font-size: 3em;
-    }
-    .about-desc {
-      font-size: 2.3em;
-    }
-    .about a {
-      margin-top: 10px;
-      font-size: 1.5em !important;
-    }
-  }
-}*/
-/*@media (max-height: 731px) and (min-height: 641px) {
-  .glitch {
-    font-size: 2em;
-  }
-  .about-head {
-    font-size: 1.5em;
-  }
-  .about-desc {
-    font-size: 20px;
-  }
-  .about .btn {
-    font-size: 0.7em;
-  }
-  .wd {
-    font-size: 15px;
-  }
-    @media (max-width: 411px) {
-    .irfan-img img {
-      left: 50%;
-      top: 64%;
-      width: 40%;
-      height: auto;
-    }  
-  }
-}*/
-/*@media (max-height: 823px) and (min-height: 732px) {
-  .glitch {
-    font-size: 2em;
-  }
-  .about-head {
-    font-size: 1.5em;
-  }
-  .about-desc {
-    font-size: 20px;
-  }
-  .about .btn {
-    font-size: 0.7em;
-  }
-  .wd {
-    font-size: 15px;
-  }
-    @media (max-width: 411px) {
-    .irfan-img img {
-      left: 50%;
-      top: 60%;
-      width: 40%;
-      height: auto;
-    }  
-  }
 
-}*/
-/*@media (max-width: 320px) {
-  .glitch {
-    font-size: 1.5em;
-  }
-  .about-head {
-    font-size: 1.2em;
-  }
-  .about-desc {
-    font-size: 16px;
-  }
-  .about .btn {
-    font-size: 0.7em;
-  }
-  .wd {
-    font-size: 12px;
-  }   
-}
-@media (max-width: 280px) {
-  .wel {
-    font-size: 1em;
-  }  
-}*/
 .glitch {
   position: relative;
   color: white;
   /*font-size: 5em;*/
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1rem;
   animation: glitch-skew 1s infinite linear alternate-reverse;
 }
 .glitch::before {
