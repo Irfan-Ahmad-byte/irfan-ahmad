@@ -146,7 +146,7 @@ section {
 
 /*mobiles*/
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   .about-desc {
     font-size: 1.5rem;
   }
@@ -188,7 +188,7 @@ section {
     .about-desc {
       font-size: 1.5rem;
     }  
-}
+}*/
 
 .glitch {
   position: relative;
