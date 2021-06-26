@@ -59,13 +59,31 @@ section {
     h3, h1 {
         font-family: 'Kaushan', sans-serif;
     }
-    h1 {
-      font-size: 3rem;
+}
+.welcome h1 {
+  font-size: 2rem;
+}
+.welcome .wel {
+  font-size: 1.7rem;
+}
+.wel {
+  font-family: 'Oswald', sans-serif;
+    animation: welcome 3s forwards;
+    transform: rotate(-180deg);
+}
+
+@keyframes welcome {
+    0% {
+        opacity: 0;
+        transform: rotate(-180deg);
     }
-    h3 {
-      font-size: 2rem;
+
+    100% {
+        opacity: 1;
+        transform: rotate(0deg);
     }
 }
+
 .irfan-img img {
     opacity: 0;
     height: auto;
@@ -89,17 +107,30 @@ section {
 }
 
 .welcome .col-md-6 {
-  margin-left: 1.5rem;
   margin-top: 2rem;
   width: 100%;
 }
 .about-head {
   font-family: 'Oswald', sans-serif;
   font-size: 2rem;
+  background-color: #923cb5;
+  background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 .about-desc {
   font-family: 'Oswald', 'Kaushan', sans-serif;
   font-size: 1rem;
+  background-color: #923cb5;
+  background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 .more-btn {
   font-family: 'Oswald', 'Kaushan', sans-serif;
@@ -109,38 +140,18 @@ section {
   0 12.5px 10px rgba(0, 0, 0, 0.06),
   0 22.3px 17.9px rgba(0, 0, 0, 0.072),
   0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-  0 100px 80px rgba(0, 0, 0, 0.12)
+  0 100px 80px rgba(0, 0, 0, 0.12);
+  font-size: 2rem;
 }
 
 /*mobiles*/
 
 @media (max-width: 768px) {
-  .irfan-img img {
-    width: 40%;
-    left: 13rem;
-    top: 30rem;
-  }
-  @media (max-height: 1024px) {
-    .irfan-img img {
-      width: 40%;
-      left: 23rem;
-      top: 25rem;
-      }
-    .about-desc {
-      font-size: 1.4rem;
-    }
-    .wd {
-      font-size: 1.5rem;
-    }
-    .glitch {
-      font-size: 2.5rem;
-    }
+  .about-desc {
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 320px) {
-  .irfan-img img {
-    display: none;
-  }
   .about {
     margin-top: 1rem;
   }
@@ -151,15 +162,33 @@ section {
     font-size: .7rem;
   }
 }
-@media (min-width: 1024px) {
-  @media (min-height: 1366px) and (-webkit-min-device-pixel-ratio:2) {
-    .irfan-img img {
-      left: 25rem;
-      top: 30rem;
-    }
-  }
-}
 
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .welcome {
+    width: 100vw;
+  }
+  .welcome .col-md-6 {
+    width: 80vw;
+  }
+    .welcome .wel {
+      font-size: 2rem;
+    }
+    .welcome h1 {
+      font-size: 3rem;
+    }
+    .wd {
+      margin-top: 1.5rem;
+      font-size: 1.5rem;
+    }
+    .about-head {
+      margin-top: 3rem;
+      font-size: 2.5rem;
+    }
+    .about-desc {
+      font-size: 1.5rem;
+    }  
+}
 
 .glitch {
   position: relative;
@@ -397,23 +426,6 @@ section {
   }
 }
 
-.wel {
-  font-family: 'Oswald', sans-serif;
-    font-size: 30px !important;
-    animation: welcome 3s forwards;
-    transform: rotate(-180deg);
-}
-@keyframes welcome {
-    0% {
-        opacity: 0;
-        transform: rotate(-180deg);
-    }
-
-    100% {
-        opacity: 1;
-        transform: rotate(0deg);
-    }
-}
 
 /*nav-bar*/
 .nav {
