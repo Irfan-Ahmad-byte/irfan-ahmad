@@ -386,7 +386,7 @@ section {
 /*nav-bar*/
 .home-btn {
   top: 0;
-  left: 50%;
+  /*left: 45%;*/
 }
 .navigation {
   top: 50;
@@ -394,11 +394,11 @@ section {
 }
 
 .nav-hover {
-  margin-top: -3rem;
+  margin-top: -2.5rem;
   transform: translateX(-7vw);
   background-color: #ffc857;
   background-image: linear-gradient(316deg, #ffc857 0%, #3e2f5b 74%);
-  height: 15%;
+  /*height: 15%;*/
   right: 0;
 }
 .nav-hover span {
@@ -451,10 +451,10 @@ section {
 
   
   /*about section*/
-.about-sec {
-    background-color: var(--color-black-1) !important;
-    color: white !important;
-    font-size: 2vw !important;
+#about-sec {
+    background-color: var(--color-black-1);
+    color: white;
+    font-size: 2vw;
     display: none;
 }
 

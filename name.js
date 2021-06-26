@@ -1,4 +1,12 @@
 
+var screenwidth = screen.width;
+var homebtn = document.getElementById("home-btn");
+var btnwidth = homebtn.offsetWidth;
+var screenhalf = screenwidth/2;
+var btnhalf = btnwidth/2;
+var marginleft = screenhalf - btnhalf;
+
+homebtn.style.marginLeft = marginleft + "px";
 
 var coll = document.getElementsByClassName("title");
 var i;
