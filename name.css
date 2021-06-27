@@ -497,11 +497,19 @@ section {
 #project:hover {
     text-decoration: none !important;
 }
+.proj-title:hover {
+  background: linear-gradient(to right, #6a0101 30%, #0d0830 100%);
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;  
+}
 .project {
-    border-top: 2px solid white !important;
+    border-top: 2px solid white;
 }
 .project:last-of-type {
-    border-bottom: 2px solid white !important;
+    border-bottom: 2px solid white;
 }
 .project a {
     color: var(--color-white);
