@@ -24,7 +24,10 @@
 html {
   font-size: 100%;
 }
-
+body {
+    background-color: #2234ae;
+    background-image: linear-gradient(315deg, #2234ae 0%, #191714 74%);  
+}
 section {
     height: 100vh;
 }
@@ -111,7 +114,7 @@ section {
 }
 .about-head {
   font-family: 'Oswald', sans-serif;
-  font-size: 2rem;
+  font-size: 2.3rem;
   background-color: #923cb5;
   background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
   background-repeat: repeat;
@@ -122,7 +125,7 @@ section {
 }
 .about-desc {
   font-family: 'Oswald', 'Kaushan', sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   background-color: #923cb5;
   background-image: linear-gradient(147deg, #923cb5 0%, #f6f4f4 74%);
   background-repeat: repeat;
@@ -143,7 +146,9 @@ section {
   font-size: 2rem;
   background-image: linear-gradient(to right, #240d3b 30%, #7b1414 100%);
 }
+
 .about .btn {
+  
   background: linear-gradient(to right, #6a0101 30%, #0d0830 100%);
   background-repeat: repeat;
   -webkit-background-clip: text;
@@ -152,11 +157,12 @@ section {
   -moz-text-fill-color: transparent;
 }
 
-
+.welcome h1 {
+  font-size: 2.3rem;
+}
 .glitch {
   position: relative;
   color: white;
-  /*font-size: 5em;*/
   letter-spacing: 0.1rem;
   animation: glitch-skew 1s infinite linear alternate-reverse;
 }
@@ -464,7 +470,7 @@ section {
   
   /*about section*/
 #about-sec {
-    background-color: black;
+    background-color: transparent;
     color: white;
     font-size: 2vw;
     display: none;
@@ -488,7 +494,7 @@ section {
 
 /*works*/
 .works {
-    background: linear-gradient(to right, #014619 0%, #0d0830 100%);
+    background: transparent;
     height: 100vh;
 }
 #project {
