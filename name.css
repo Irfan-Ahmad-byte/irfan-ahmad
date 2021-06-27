@@ -85,11 +85,10 @@ section {
 }
 
 .irfan-img img {
-    opacity: 0;
+    opacity: 0.2;
     height: auto;
     animation: image 3s forwards;
-    animation-delay: 1s;
-    left: 70%;
+    left: 65%;
     display: none;
 }
 
@@ -403,24 +402,17 @@ section {
 
 .nav-hover {
   margin-top: -2.5rem;
-  transform: translateX(-7vw);
-  background-color: #ffc857;
-  background-image: linear-gradient(316deg, #ffc857 0%, #3e2f5b 74%);
+  transform: translateX(-10vw);
+  background: linear-gradient(to right, #6a0101 30%, #0d0830 100%);
   /*height: 15%;*/
   right: 0;
   /*transform: rotateX(-90deg);*/
 }
 .nav-hover span {
-  right: -5vw;
+  right: -9vw;
   font-family: 'Oswald', 'Kaushan', sans-serif;
+  color: white;
   display: none;
-  background-color: #91d370;
-  background-image: linear-gradient(319deg, #91d370 0%, #bca0ff 37%, #f2cd54 100%);
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
 }
 .nav-link:hover {
   transform: rotateY(-45deg);
@@ -430,6 +422,7 @@ section {
   /*transform: rotateX(0deg);*/
 }
 .nav-link:hover + .nav-hover .nav-text {
+  animation: linktext 1s forwards;
   display: block;
 }
 @keyframes linkhover {
@@ -441,15 +434,15 @@ section {
   }
 }
 @keyframes linktext {
-  0% {
-    width: 0%;
+  from {
+    opacity: 0;
   }
-  100% {
-    width: 100%;
+  to {
+    opacity: 1;
   }
 }
 .hover-svg {
-  fill: #a55c1b;
+  fill: white;
 }
 .more-btn:hover {
   background-image: linear-gradient(to right, #240d3b 30%, #7b1414 100%);

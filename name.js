@@ -9,14 +9,14 @@ var marginleft = screenhalf - btnhalf;
 homebtn.style.marginLeft = marginleft + "px";
 
 // test functions
-function moreClick () {
-	var sec = document.getElementsByClassName("nav-link");
-	var sec1 = document.getElementById("about-sec");	
-	alert(sec[6].offsetTop);
-	alert(sec1.offsetTop);
-	alert(window.pageYOffset);
-	alert(document.documentElement.scrollHeight);
-}
+// function moreClick () {
+// 	var sec = document.getElementsByClassName("nav-link");
+// 	var sec1 = document.getElementById("about-sec");	
+// 	alert(sec[6].offsetTop);
+// 	alert(sec1.offsetTop);
+// 	alert(window.pageYOffset);
+// 	alert(document.documentElement.scrollHeight);
+// }
 
 
 // change svg fill color when background matches the fill
