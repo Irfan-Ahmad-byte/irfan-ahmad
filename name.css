@@ -393,7 +393,7 @@ section {
 /*nav-bar*/
 .home-btn {
   top: 0;
-  /*left: 45%;*/
+  right: 0%;
 }
 .navigation {
   top: 50;

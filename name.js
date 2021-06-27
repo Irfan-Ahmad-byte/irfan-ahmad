@@ -1,12 +1,12 @@
 // left margin of home btn
-var screenwidth = screen.width;
-var homebtn = document.getElementById("home-btn");
-var btnwidth = homebtn.offsetWidth;
-var screenhalf = screenwidth/2;
-var btnhalf = btnwidth/2;
-var marginleft = screenhalf - btnhalf;
+// var screenwidth = screen.width;
+// var homebtn = document.getElementById("home-btn");
+// var btnwidth = homebtn.offsetWidth;
+// var screenhalf = screenwidth/2;
+// var btnhalf = btnwidth/2;
+// var marginleft = screenhalf - btnhalf + 50;
 
-homebtn.style.marginLeft = marginleft + "px";
+// homebtn.style.marginLeft = marginleft + "px";
 
 // test functions
 // function moreClick () {
