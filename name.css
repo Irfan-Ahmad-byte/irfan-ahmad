@@ -125,9 +125,8 @@ section {
 }
 .about-desc {
   font-family: 'Oswald', 'Kaushan', sans-serif;
-  font-size: 1.2rem;
-  background-color: #923cb5;
-  background-image: linear-gradient(147deg, #923cb5 0%, #f6f4f4 74%);
+  font-size: 1.4rem;
+background: linear-gradient(to right, #110de7 53%, #edebfa 100%);
   background-repeat: repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
@@ -148,7 +147,7 @@ section {
 }
 
 .about .btn {
-  
+
   background: linear-gradient(to right, #6a0101 30%, #0d0830 100%);
   background-repeat: repeat;
   -webkit-background-clip: text;
