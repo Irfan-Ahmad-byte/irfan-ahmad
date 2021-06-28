@@ -48,6 +48,41 @@
 // 	};
 // } while (scrlheight < docheight);
 
+var menu = document.getElementById("menu-toggle");
+menu.addEventListener("click", function() {
+	this.classList.toggle("active");
+	var fs1 =document.getElementById("fs-1");
+	var fs2 =document.getElementById("fs-2");
+	var fs3 =document.getElementById("fs-3");
+
+	var st1 = window.getComputedStyle(fs1);
+	var st2 = window.getComputedStyle(fs2);
+	var st3 = window.getComputedStyle(fs3);
+	
+	var rot1 = st1.getPropertyValue("transform");
+	var rot2 = st2.getPropertyValue("transform");
+	var rot3 = st3.getPropertyValue("transform");
+
+	if (rot2 == "none" || rot2 == "matrix(1, 0, 0, 1, 0, 0)") {
+		fs2.style.transform = "rotate(90deg)";
+	} else {
+		fs2.style.transform = "rotate(0deg)";
+	}
+	if (rot1 == "none" || rot1 == "matrix(1, 0, 0, 1, 0, 0)") {
+		fs1.style.transform = "rotate(-45deg)";
+	} else {
+		fs1.style.transform = "rotate(0deg)";
+	}
+	if (rot3 == "none" || rot3 == "matrix(1, 0, 0, 1, 0, 0)") {
+		fs3.style.transform = "rotate(45deg)";
+	} else {
+		fs3.style.transform = "rotate(0deg)";
+	}		
+	// alert(rot2 + rot1 + rot3);
+
+});
+
+
 var coll = document.getElementsByClassName("title");
 var i;
 for (i=0; i < coll.length; i++) {

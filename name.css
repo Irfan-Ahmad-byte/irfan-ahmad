@@ -26,7 +26,7 @@ html {
 }
 body {
     background-color: #2234ae;
-    background-image: linear-gradient(315deg, #2234ae 0%, #191714 74%);  
+    background-image: linear-gradient(315deg, #2234ae 0%, #191714 35%);  
 }
 section {
     height: 100vh;
@@ -35,7 +35,7 @@ section {
 /*home section*/
 .home {
     background-color: #2234ae;
-    background-image: linear-gradient(315deg, #2234ae 0%, #191714 74%);
+    background-image: linear-gradient(75deg, #2234ae 0%, #191714 60%);
     animation: home 2s forwards;
     transition: opacity 2s ease-in;
 }
@@ -106,6 +106,7 @@ section {
 .wd {
     letter-spacing: 0.1rem;
     font-size: 1rem;
+    color: black;
 }
 
 .welcome .col-md-6 {
@@ -115,23 +116,12 @@ section {
 .about-head {
   font-family: 'Oswald', sans-serif;
   font-size: 2.3rem;
-  background-color: #923cb5;
-  background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
+  color: black;
 }
 .about-desc {
   font-family: 'Oswald', 'Kaushan', sans-serif;
-  font-size: 1.4rem;
-background: linear-gradient(to right, #110de7 53%, #edebfa 100%);
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
+  font-size: 1.2rem;
+  color: white;
 }
 .more-btn {
   font-family: 'Oswald', 'Kaushan', sans-serif;
@@ -155,7 +145,9 @@ background: linear-gradient(to right, #110de7 53%, #edebfa 100%);
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
 }
-
+.welcome h3 {
+  color: black;
+}
 .welcome h1 {
   font-size: 2.3rem;
 }
@@ -400,6 +392,22 @@ background: linear-gradient(to right, #110de7 53%, #edebfa 100%);
   top: 0;
   right: 0%;
 }
+.menu-toggle {
+  top: 5rem;
+  right: 0%;
+  background-color: #2234ae;
+  width: 40px;
+  height: 30px;
+  display: grid;
+  justify-content: center;
+  border-radius: 20%;
+}
+.fs {
+  height: 0;
+  padding: 2.5px 10px;
+  border-bottom: 1px solid #fff;  
+  width: 100%;
+}
 .navigation {
   top: 50;
   left: 85vw;
@@ -409,9 +417,7 @@ background: linear-gradient(to right, #110de7 53%, #edebfa 100%);
   margin-top: -2.5rem;
   transform: translateX(-10vw);
   background: linear-gradient(to right, #6a0101 30%, #0d0830 100%);
-  /*height: 15%;*/
   right: 0;
-  /*transform: rotateX(-90deg);*/
 }
 .nav-hover span {
   right: -9vw;
@@ -447,7 +453,9 @@ background: linear-gradient(to right, #110de7 53%, #edebfa 100%);
   }
 }
 .hover-svg {
+  position: relative;
   fill: white;
+  z-index: 10000;
 }
 .more-btn:hover {
   background-image: linear-gradient(to right, #240d3b 30%, #7b1414 100%);
