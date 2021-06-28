@@ -37,10 +37,10 @@ menu.addEventListener("click", function() {
 	}		
 	
 	let navElement = this.nextElementSibling;
-	if (navElement.style.display == "block") {
+	if (navElement.style.display == "flex") {
 		navElement.style.display = "none";
 	} else {
-		navElement.style.display = "block";
+		navElement.style.display = "flex";
 	}
 
 });
