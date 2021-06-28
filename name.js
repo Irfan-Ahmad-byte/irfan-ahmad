@@ -65,16 +65,17 @@ menu.addEventListener("click", function() {
 
 	if (rot2 == "none" || rot2 == "matrix(1, 0, 0, 1, 0, 0)") {
 		fs2.style.transform = "rotate(90deg)";
+		fs2.style.marginLeft = "10px";
 	} else {
 		fs2.style.transform = "rotate(0deg)";
 	}
 	if (rot1 == "none" || rot1 == "matrix(1, 0, 0, 1, 0, 0)") {
-		fs1.style.transform = "rotate(-45deg)";
+		fs1.style.transform = "rotate(-55deg)";
 	} else {
 		fs1.style.transform = "rotate(0deg)";
 	}
 	if (rot3 == "none" || rot3 == "matrix(1, 0, 0, 1, 0, 0)") {
-		fs3.style.transform = "rotate(45deg)";
+		fs3.style.transform = "rotate(55deg)";
 	} else {
 		fs3.style.transform = "rotate(0deg)";
 	}		
@@ -83,7 +84,7 @@ menu.addEventListener("click", function() {
 });
 
 
-var coll = document.getElementsByClassName("title");
+var coll = document.getElementsByClassName("proj-title");
 var i;
 for (i=0; i < coll.length; i++) {
 	coll[i].addEventListener("click", function() {
