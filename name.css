@@ -485,8 +485,19 @@ section {
   box-shadow:
   5px 0px 15px darkred;
 }
-
+@media (max-width: 768px) {
+  .home {
+    background-color: #2234ae;
+    background-image: linear-gradient(75deg, white 0%, gold 60%);    
+  }
+  .about-desc {
+    color: black;
+  }
+  .about-head {
+    color: blue;
+  }
   /*about section*/
+}
 #about-sec {
     background-color: transparent;
     color: white;
