@@ -496,6 +496,9 @@ section {
   .about-head {
     color: blue;
   }
+  .hover-svg {
+    fill: blue;
+  }
   /*about section*/
 }
 #about-sec {
