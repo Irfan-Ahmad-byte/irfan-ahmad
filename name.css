@@ -34,6 +34,7 @@ section {
 
 /*home section*/
 .home {
+    display: flex;
     background-color: #2234ae;
     background-image: linear-gradient(75deg, #2234ae 0%, #191714 60%);
     animation: home 2s forwards;
@@ -392,6 +393,7 @@ section {
 .home-btn {
   top: 0;
   right: 0%;
+  z-index: 20000;
 }
 .menu-toggle {
   top: 5rem;
@@ -413,30 +415,34 @@ section {
   width: 0px;
 }
 .navigation {
-  top: 50;
-  left: 85vw;
-  /*width: 100vw;*/
+  top: 0px;
+  /*left: 50%;*/
+  height: 100vh;
+  width: 100vw;
   display: none;
+  background-color: #2234ae;
+  background-image: linear-gradient(75deg, white 0%, gold 60%);    
 }
-
+.nav-link {
+  z-index: 10000;
+}
 .nav-hover {
   margin-top: -2.5rem;
-  transform: translateX(-10vw);
+  /*transform: translateX(-10vw);*/
   background: linear-gradient(to right, #6a0101 30%, #0d0830 100%);
   right: 0;
+  z-index: -10000;
 }
 .nav-hover span {
-  right: -9vw;
   font-family: 'Oswald', 'Kaushan', sans-serif;
   color: white;
   display: none;
 }
 .nav-link:hover {
-  transform: rotateY(-45deg);
+  transform: rotateY(-75deg);
 }
 .nav-link:hover + .nav-hover {
   animation: linkhover 1s forwards;
-  /*transform: rotateX(0deg);*/
 }
 .nav-link:hover + .nav-hover .nav-text {
   animation: linktext 1s forwards;
@@ -447,7 +453,7 @@ section {
     width: 0%;
   }
   100% {
-    width: 280%;
+    width: 100%;
   }
 }
 @keyframes linktext {
@@ -479,6 +485,7 @@ section {
 .footer-container {
   background-color: gold;
   border-radius: 20px;
+  margin-bottom: 3vh;
   margin-left: 70vw;
   position: fixed;
   font-weight: bold;
@@ -555,6 +562,7 @@ section {
 }
 button {
     border: none;
+    z-index: 2000000;
 }
 .project .desc {
     color: white;

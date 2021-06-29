@@ -1,5 +1,7 @@
 // menu toggler button
+var home = document.getElementById('home');
 var menu = document.getElementById("menu-toggle");
+var navElement = document.getElementById('navigation');
 menu.addEventListener("click", function() {
 	this.classList.toggle("active");
 	var fs1 =document.getElementById("fs-1");
@@ -36,7 +38,7 @@ menu.addEventListener("click", function() {
 		fs3.style.marginLeft = "0px";
 	}		
 	
-	let navElement = this.nextElementSibling;
+	// let navElement = this.nextElementSibling;
 	if (navElement.style.display == "flex") {
 		navElement.style.display = "none";
 	} else {
@@ -44,8 +46,16 @@ menu.addEventListener("click", function() {
 	}
 
 });
+// footer text
+document.getElementById('foot').textContent = "<design & creation> © <Irfan Ahmad>";
 
-// project viewer
+// displaychange for navigation menus when click
+function displayChange() {
+	navElement.style.display = 'none';
+}
+
+
+// project viewe
 var projects = document.getElementsByClassName("proj-title");
 var i;
 for (i=0; i < projects.length; i++) {

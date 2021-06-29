@@ -13,7 +13,7 @@
 </head>
 <body>
 <body>
-    <section id="home" class="d-flex home position-relative">
+    <section id="home" class="home position-relative">
             <div class="welcome col-md-8 p-5 position-absolute text-start">
                 <h3 class="px-3 wel">Welcome de</h3><br>
                 <h1 class="px-3 glitch" data-text="Irfan Ahmad">Irfan Ahmad</h1>
@@ -30,16 +30,14 @@
             <!-- <div class="col-md-6 irfan-img align-bottom mt-5">
                 <img id="irfan-img" class="position-absolute" src="irfann_nobg.png" alt="Irfan Ahmad">
             </div> -->
-            <footer class="d-flex align-items-end p-4">
-                <div class="footer-container p-4" >design | creation &copy Irfan Ahmad</div>
-            </footer>
     </section>
    
     <!-- navbar -->
          <a id="home-btn" href="#home" class="position-absolute position-fixed home-btn text-capitalize nav-link mt-4 px-3 pt-0 pb-0" id="home-btn"><svg style="height:40px; width:40px;" class='hover-svg' xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-house-fill" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
   <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-</svg></a>        
+</svg></a>
+
 <button onclick="menuToggle()" class="position-absolute position-fixed menu-toggle mx-3" id="menu-toggle">
     <div class="fs fs-1" id="fs-1"></div>
     <div class="fs fs-2" id="fs-2"></div>
@@ -47,30 +45,40 @@
 </button>
 
 
-    <nav class=" navigation mt-5 p-2 pb-2 position-absolute position-fixed float-end" id="navigation">
-        <div class="col text-center fs-5">
-          <a id='nav-link' href="#about-sec" class="position-relative text-capitalize nav-link mt-4 red-type px-3 pt-0 pb-0" id="about"><svg style="height:40px; width:40px;" class="hover-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+    <nav class=" navigation justify-content-center align-items-center position-absolute position-fixed" id="navigation">
+        <div class="col-sm-1 text-center fs-5">
+          <a id='nav-link' onclick = "displayChange()" href="#about-sec" class="position-relative text-capitalize nav-link mt-4  pt-0 pb-0" id="about"><svg style="height:40px; width:40px;" class="hover-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
   <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
-</svg></a><div class="nav-hover  position-absolute"><span class="nav-text pt-2 pb-2 text-capitalize">about me</span></div>
-            <a id='nav-link' href="#works" iposition-relative d="work" class="text-capitalize nav-link mt-4 red-type px-3 pt-0 pb-0"><svg style="height:40px; width:40px;" class="hover-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award-fill" viewBox="0 0 16 16">
+</svg></a><div class="nav-hover text-start  position-absolute"><span class="nav-text px-5 pt-2 pb-2 text-capitalize">about me</span></div>
+            <a id='nav-link' onclick = "displayChange()" href="#works" iposition-relative d="work" class="text-capitalize nav-link mt-4  pt-0 pb-0"><svg style="height:40px; width:40px;" class="hover-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award-fill" viewBox="0 0 16 16">
   <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"/>
   <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
-</svg></a><div class="nav-hover  position-absolute"><span class="nav-text pt-2 pb-2 text-capitalize">my achievements</span></div>
-            <a id='nav-link' href="#" id="cuposition-relative rrent" class="text-capitalize nav-link mt-4 blue-type px-3 pt-0 pb-0"><svg style="height:40px; width:40px;" class="hover-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookshelf" viewBox="0 0 16 16">
+</svg></a><div class="nav-hover text-start  position-absolute"><span class="nav-text px-5 pt-2 pb-2 text-capitalize">my achievements</span></div>
+            <a id='nav-link' onclick = "displayChange()" href="#" id="cuposition-relative rrent" class="text-capitalize nav-link mt-4 blue-type  pt-0 pb-0"><svg style="height:40px; width:40px;" class="hover-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookshelf" viewBox="0 0 16 16">
   <path d="M2.5 0a.5.5 0 0 1 .5.5V2h10V.5a.5.5 0 0 1 1 0v15a.5.5 0 0 1-1 0V15H3v.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zM3 14h10v-3H3v3zm0-4h10V7H3v3zm0-4h10V3H3v3z"/>
-</svg></a><div class="nav-hover  position-absolute"><span class="nav-text pt-2 pb-2 text-capitalize">current projects</span></div>
-            <a id='nav-link' href="#" id="" position-relative class="text-capitalize nav-link mt-4 red-type px-3 pt-0 pb-0"><svg style="height:40px; width:40px;" class="hover-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bucket-fill" viewBox="0 0 16 16">
+</svg></a><div class="nav-hover text-start  position-absolute"><span class="nav-text px-5 pt-2 pb-2 text-capitalize">current projects</span></div>
+            <a id='nav-link' onclick = "displayChange()" href="#" id="" position-relative class="text-capitalize nav-link mt-4  pt-0 pb-0"><svg style="height:40px; width:40px;" class="hover-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bucket-fill" viewBox="0 0 16 16">
   <path d="M2.522 5H2a.5.5 0 0 0-.494.574l1.372 9.149A1.5 1.5 0 0 0 4.36 16h7.278a1.5 1.5 0 0 0 1.483-1.277l1.373-9.149A.5.5 0 0 0 14 5h-.522A5.5 5.5 0 0 0 2.522 5zm1.005 0a4.5 4.5 0 0 1 8.945 0H3.527z"/>
-</svg></a><div class="nav-hover  position-absolute"><span class="nav-text pt-2 pb-2 text-capitalize">offers</span></div>
-            <a id='nav-link' href="" class="position-relative text-capitalize nav-link mt-4 blue-type px-3 pt-0 pb-0" id="contact"><svg style="height:40px; width:40px;" class="hover-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-plus" viewBox="0 0 16 16">
+</svg></a><div class="nav-hover text-start  position-absolute"><span class="nav-text px-5 pt-2 pb-2 text-capitalize">offers</span></div>
+            <a id='nav-link' onclick = "displayChange()" href="" class="position-relative text-capitalize nav-link mt-4 blue-type  pt-0 pb-0" id="contact"><svg style="height:40px; width:40px;" class="hover-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-plus" viewBox="0 0 16 16">
   <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
   <path d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"/>
-</svg></a><div class="nav-hover  position-absolute"><span class="nav-text pt-2 pb-2 text-capitalize">blog</span></div>
-            <a onclick="moreClick()" id='nav-link' href="" class="position-relative text-capitalize nav-link mt-4 blue-type px-3 pt-0 pb-0" id="contact"><svg style="height:40px; width:40px;" class="hover-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-door-open-fill" viewBox="0 0 16 16">
+</svg></a><div class="nav-hover text-start  position-absolute"><span class="nav-text px-5 pt-2 pb-2 text-capitalize">blog</span></div>
+            <a id='nav-link' onclick = "displayChange()" href="" class="position-relative text-capitalize nav-link mt-4 blue-type  pt-0 pb-0" id="contact"><svg style="height:40px; width:40px;" class="hover-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-door-open-fill" viewBox="0 0 16 16">
   <path d="M1.5 15a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1H13V2.5A1.5 1.5 0 0 0 11.5 1H11V.5a.5.5 0 0 0-.57-.495l-7 1A.5.5 0 0 0 3 1.5V15H1.5zM11 2h.5a.5.5 0 0 1 .5.5V15h-1V2zm-2.5 8c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z"/>
-</svg></a><div class="nav-hover  position-absolute"><span class="nav-text pt-2 pb-2 text-capitalize">doors are open, let's talk</span></div>
+</svg></a><div class="nav-hover text-start  position-absolute"><span class="nav-text px-5 pt-2 pb-2 text-capitalize">doors are open, let's talk</span></div>
         </div>
     </nav>
+
+
+
+
+
+
+
+<footer class="d-flex align-items-end position-absolute position-fixed mb-5 pb-4">
+    <div class="footer-container pt-2 pb-2 px-3" id="foot"></div>
+</footer>
 
 
         <section class="about-sec container-fluid d-flex justify-content-center align-items-center" id="about-sec">
