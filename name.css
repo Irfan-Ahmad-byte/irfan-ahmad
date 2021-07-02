@@ -481,17 +481,7 @@ section {
   transition: var(--speed-normal);
 }
 
-  /*footer container*/
-.footer-container {
-  background-color: gold;
-  border-radius: 20px;
-  margin-bottom: 3vh;
-  margin-left: 70vw;
-  position: fixed;
-  font-weight: bold;
-  box-shadow:
-  5px 0px 15px darkred;
-}
+
 @media (max-width: 768px) {
   .home {
     background-color: #2234ae;
@@ -531,6 +521,17 @@ section {
     }
 }
 
+  /*footer container*/
+.footer-container {
+  background-color: gold;
+  border-radius: 20px;
+  margin-bottom: 2.5vw;
+  margin-left: 73vw;
+  position: fixed;
+  font-weight: bold;
+  box-shadow:
+  5px 0px 15px darkred;
+}
 /*works*/
 .works {
     background: transparent;
