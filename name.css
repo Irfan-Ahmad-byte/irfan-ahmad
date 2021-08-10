@@ -431,7 +431,7 @@ section {
   /*transform: translateX(-10vw);*/
   background: linear-gradient(to right, #6a0101 30%, #0d0830 100%);
   right: 0;
-  z-index: -10000;
+  z-index: -1000000;
 }
 .nav-hover span {
   font-family: 'Oswald', 'Kaushan', sans-serif;
