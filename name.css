@@ -420,8 +420,8 @@ section {
   height: 100vh;
   width: 100vw;
   display: none;
-  background-color: #2234ae;
-  background-image: linear-gradient(75deg, white 0%, gold 60%);    
+background-color: #7f5a83;
+background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
 }
 .nav-link {
   z-index: 10000;
